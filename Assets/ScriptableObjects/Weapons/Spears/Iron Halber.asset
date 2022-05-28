@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69be888375d86e54888f017147d87d4c, type: 3}
+  m_Name: Iron Halber
+  m_EditorClassIdentifier: 
+  icon: {fileID: 289538208, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
+  itemName: Iron Halberd
+  <WeaponType>k__BackingField: Spear
+  baseDmg: 1
+  <cooldown>k__BackingField: 1
+  speed: 1
+  hits: 1
+  weaponProjectile: {fileID: 9024434700064609739, guid: cac1329d421c67e48844e0247dfff300, type: 3}
+  <timeBetweenExtraShotsPercent>k__BackingField: 0
+  StabLength: 1

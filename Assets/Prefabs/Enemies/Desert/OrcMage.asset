@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdaebec8dc1478349a7ec6592fcfa7d8, type: 3}
+  m_Name: OrcMage
+  m_EditorClassIdentifier: 
+  ScalingFactor: 0
+  TimeToStartScaling: 0
+  MaxHealth: 1
+  moveSpeed: 1
+  Dmg: 1
+  ExpGiven: 0
+  AIMode: 1
+  LootTable: {fileID: 0}
+  specialCooldown: 1
+  specialProjectile: {fileID: 6158760455325573977, guid: 529e2fc8b475f2247ab5f31785c230f5, type: 3}

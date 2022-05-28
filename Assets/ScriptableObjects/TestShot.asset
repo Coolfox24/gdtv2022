@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a91e2d115a4e21499a42bf927a9e6d4, type: 3}
+  m_Name: TestShot
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  itemName: Arcane Wand
+  baseDmg: 3
+  <cooldown>k__BackingField: 2
+  speed: 6
+  hits: 2
+  weaponProjectile: {fileID: 5043865050563303404, guid: f02e0cc89e6e26b40b957024b092c018, type: 3}
+  <timeBetweenExtraShotsPercent>k__BackingField: 0.1

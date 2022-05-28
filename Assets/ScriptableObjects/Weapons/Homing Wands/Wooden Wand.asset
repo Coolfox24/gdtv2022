@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a91e2d115a4e21499a42bf927a9e6d4, type: 3}
+  m_Name: Wooden Wand
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1514368552, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
+  itemName: Wooden Wand
+  <WeaponType>k__BackingField: Homing Wand
+  baseDmg: 1
+  <cooldown>k__BackingField: 1
+  speed: 1
+  hits: 1
+  weaponProjectile: {fileID: 6158760455325573977, guid: ee4dfacdffb0b724795b1c45fead49bb, type: 3}
+  <timeBetweenExtraShotsPercent>k__BackingField: 0.1
