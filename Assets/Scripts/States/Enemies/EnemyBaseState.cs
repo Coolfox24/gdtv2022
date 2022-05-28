@@ -33,7 +33,7 @@ public class EnemyBaseState : BaseState
         //Check if too far away from player and despawn if so
         if(dir.sqrMagnitude > stateMachine.MaxDistanceFromPlayerSqrd)
         {
-            stateMachine.OnDie();
+            stateMachine.OnRange();
             return;
         }
         dir.Normalize();

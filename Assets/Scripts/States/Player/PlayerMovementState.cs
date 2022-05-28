@@ -6,15 +6,14 @@ using UnityEngine;
 public class PlayerMovementState : PlayerBaseState
 {
     Rigidbody2D body;
-    private Vector2 facing;
+
 
     private float timeSinceLastFootprint;
     const float footprintTime = 0.2f;
 
     public PlayerMovementState(PlayerStateMachine stateMachine) : base(stateMachine)
     {
-        body = stateMachine.GetComponent<Rigidbody2D>();
-        facing = Vector2.up; //Set initial projectile direction
+        body = stateMachine.GetComponent<Rigidbody2D>(); //Set initial projectile direction
     }
 
     public override void OnEnter()
@@ -22,8 +21,16 @@ public class PlayerMovementState : PlayerBaseState
         timeSinceLastFootprint = footprintTime;
 
         stateMachine.Input.Menu += ShowCharacterScreen;
+        stateMachine.Input.KillSelf += KillSelf;
     }
     
+    public void KillSelf()
+    {
+        stateMachine.OnDie();
+        stateMachine.Input.KillSelf -= KillSelf;
+    }
+
+
     public override void OnTick(float deltaTime)
     {
         Move(deltaTime);
@@ -40,7 +47,7 @@ public class PlayerMovementState : PlayerBaseState
         if((timeSinceLastFootprint-=deltaTime) < 0)
         {
             timeSinceLastFootprint = footprintTime;
-            stateMachine.FootprintSpawner.SpawnFootprint(facing, position);
+            stateMachine.FootprintSpawner.SpawnFootprint(stateMachine.Facing, position);
         }
     }
 
@@ -65,7 +72,7 @@ public class PlayerMovementState : PlayerBaseState
 
         if(x != 0 || y != 0)
         {
-            facing = stateMachine.Input.Movement;
+            stateMachine.Facing = stateMachine.Input.Movement;
             stateMachine.Animator.SetFloat(stateMachine.PlayerDirectionXHash, x);
             stateMachine.Animator.SetFloat(stateMachine.PlayerDirectionYHash, y);
             stateMachine.Animator.SetBool(stateMachine.PlayerMovingHash, true);
@@ -85,7 +92,7 @@ public class PlayerMovementState : PlayerBaseState
                 //Should be no weapons after this to fire
                 return;
             }
-            weapon?.CheckWeaponCooldown(deltaTime,  facing, stateMachine.PlayerStats, stateMachine.Equipment.armorStats, stateMachine.transform);
+            weapon?.CheckWeaponCooldown(deltaTime,  stateMachine.Facing, stateMachine.PlayerStats, stateMachine.Equipment.armorStats, stateMachine.transform);
         }
     }
 

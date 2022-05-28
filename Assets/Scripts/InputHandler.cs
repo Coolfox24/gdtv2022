@@ -12,6 +12,8 @@ public class InputHandler : MonoBehaviour, Controls.IPlayerControlsActions
     public event Action Confirm;
     public event Action Menu;
 
+    public event Action KillSelf;
+
     void Start()
     {
         controls = new ();
@@ -22,7 +24,6 @@ public class InputHandler : MonoBehaviour, Controls.IPlayerControlsActions
 
     void Update()
     {
-        InputSystem.Update();
     }
 
     private void OnDestroy()
@@ -53,5 +54,15 @@ public class InputHandler : MonoBehaviour, Controls.IPlayerControlsActions
         }
 
         Menu?.Invoke();
+    }
+
+    public void OnDeath(InputAction.CallbackContext context)
+    {
+        if(!context.performed)
+        {
+            return;
+        }
+        
+        KillSelf?.Invoke();
     }
 }

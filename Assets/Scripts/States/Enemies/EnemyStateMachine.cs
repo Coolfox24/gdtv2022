@@ -62,6 +62,13 @@ public class EnemyStateMachine : BaseStateMachine
         lootGenerator.GenerateLoot(Stats.LootTable, transform.position);
         GameObject.Destroy(this.gameObject);
     }
+    
+    public void OnRange()
+    {
+        gameObject.SetActive(false);
+        enemySpawner.RegisterDeath(gameObject, 0);
+        GameObject.Destroy(this.gameObject);
+    }
 
     public void OnTriggerEnter2D(Collider2D other)
     {

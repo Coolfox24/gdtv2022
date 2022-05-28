@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        Debug.Log("Starting Game");
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 

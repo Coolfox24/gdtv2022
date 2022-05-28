@@ -53,6 +53,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Death"",
+                    ""type"": ""Button"",
+                    ""id"": ""8562c4c2-8b32-4940-bcf0-a85c9fa97f77"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -130,6 +139,17 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""OpenMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dac64ecb-6446-426e-9cb9-c97788a42d12"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Death"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -659,6 +679,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_PlayerControls_Movement = m_PlayerControls.FindAction("Movement", throwIfNotFound: true);
         m_PlayerControls_Confirm = m_PlayerControls.FindAction("Confirm", throwIfNotFound: true);
         m_PlayerControls_OpenMenu = m_PlayerControls.FindAction("OpenMenu", throwIfNotFound: true);
+        m_PlayerControls_Death = m_PlayerControls.FindAction("Death", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -733,6 +754,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerControls_Movement;
     private readonly InputAction m_PlayerControls_Confirm;
     private readonly InputAction m_PlayerControls_OpenMenu;
+    private readonly InputAction m_PlayerControls_Death;
     public struct PlayerControlsActions
     {
         private @Controls m_Wrapper;
@@ -740,6 +762,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_PlayerControls_Movement;
         public InputAction @Confirm => m_Wrapper.m_PlayerControls_Confirm;
         public InputAction @OpenMenu => m_Wrapper.m_PlayerControls_OpenMenu;
+        public InputAction @Death => m_Wrapper.m_PlayerControls_Death;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -758,6 +781,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @OpenMenu.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnOpenMenu;
                 @OpenMenu.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnOpenMenu;
                 @OpenMenu.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnOpenMenu;
+                @Death.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnDeath;
+                @Death.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnDeath;
+                @Death.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnDeath;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -771,6 +797,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @OpenMenu.started += instance.OnOpenMenu;
                 @OpenMenu.performed += instance.OnOpenMenu;
                 @OpenMenu.canceled += instance.OnOpenMenu;
+                @Death.started += instance.OnDeath;
+                @Death.performed += instance.OnDeath;
+                @Death.canceled += instance.OnDeath;
             }
         }
     }
@@ -885,6 +914,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnConfirm(InputAction.CallbackContext context);
         void OnOpenMenu(InputAction.CallbackContext context);
+        void OnDeath(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

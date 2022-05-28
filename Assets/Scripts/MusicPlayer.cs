@@ -21,7 +21,7 @@ public class MusicPlayer : MonoBehaviour
 
     private void Update()
     {
-        musicToPlay.volume = musicVolume;
+        musicToPlay.volume = musicVolume * Settings.volumePct;
     }
 
     public void PlayMusic(AudioClip newClip)

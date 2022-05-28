@@ -13,7 +13,7 @@ public class PlayerStateMachine : BaseStateMachine
     [field: SerializeField] public ItemSelection ItemSelection {get; private set;}
     [field: SerializeField] public HUDController HUD {get; private set;}
     [field: SerializeField] public LootTableSO StartingWeapon {get; private set;}
-
+    public Vector2 Facing = new Vector2(0, 1);
     BossStateMachine death;
 
     float maxTime = 60 * 20;

@@ -10,7 +10,7 @@ public class ForwardShotWeapon : WeaponSO
         float speed = (this.speed + stats.Proj_speed + armorStats.Proj_speed);
         //Shoot projectile forward
         GameObject proj = Instantiate(weaponProjectile, playerPos.position, Quaternion.identity); //TODO this quaternion needs to be set to facing
-        proj.GetComponent<Rigidbody2D>().velocity = facing * speed; 
+        proj.GetComponent<Rigidbody2D>().velocity = facing * (speed + stats.Proj_speed + armorStats.Proj_speed); 
         Projectile p = proj.GetComponent<Projectile>();
         p?.Setup(baseDmg + stats.Damage + armorStats.Damage,
                  hits + (int)stats.Proj_passthrough + (int)armorStats.Proj_passthrough

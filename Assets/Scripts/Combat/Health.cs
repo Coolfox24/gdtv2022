@@ -17,6 +17,11 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        if(curHealth <= 0)
+        {
+            return;
+        }
+        
         curHealth -= amount;
         AudioPlayer.PlayClipAtPoint(dmgSound, this.transform.position);
         if(curHealth <= 0)

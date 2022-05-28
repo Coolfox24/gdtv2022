@@ -16,7 +16,7 @@ public class AudioPlayer : MonoBehaviour
         newAudio.loop = false;
         newAudio.Play();
 
-        newAudio.volume = audioVolume;
+        newAudio.volume = audioVolume * Settings.sfxPct;
 
 
         Destroy(go, clip.length);
@@ -27,7 +27,7 @@ public class AudioPlayer : MonoBehaviour
     public static AudioSource PlayClipAtPoint(AudioClip clip, Vector3 position, float volume)
     {
         AudioSource newAudio = PlayClipAtPoint(clip, position);
-        newAudio.volume = volume;
+        newAudio.volume = volume * Settings.sfxPct;
 
         return newAudio;
     }
