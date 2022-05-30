@@ -35,7 +35,6 @@ public class StabWeapon : MonoBehaviour
         if(curSwingTime > swingSpeed/2)
         {
             Vector2 t = Vector2.Lerp(Vector2.zero, OffSet, (curSwingTime / 2) / (swingSpeed / 2));
-            Debug.Log(transform.localPosition);
             transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y) + t * Time.deltaTime;
         }
         else

@@ -56,7 +56,6 @@ public class LootTableSO : ScriptableObject
             totalWeight += iWeight.weighting;
         }
         int randomNum = Random.Range(0, totalWeight);
-
         foreach(ItemWeightings item in ListOfItems)
         {
             if(randomNum <= (item.weighting + (item.weighting < 30 ? weightAdjust : -weightAdjust)))
@@ -66,18 +65,17 @@ public class LootTableSO : ScriptableObject
             }
             else
             {
-                totalWeight -= item.weighting;
+                randomNum -= item.weighting;
                 if(item.weighting < 30)
                 {
-                    totalWeight -= weightAdjust;
+                    randomNum -= weightAdjust;
                 }
                 else
                 {
-                    totalWeight += weightAdjust;
+                    randomNum += weightAdjust;
                 }
             }
         }
-
         return null;
     }
     

@@ -86,7 +86,7 @@ public class PlayerStateMachine : BaseStateMachine
         transform.position = new Vector3(-375, 222, 0);
         timeRemaining = 0;
         death.gameObject.SetActive(true);
-
+        FindObjectOfType<GameMusic>().InDeathFight = true;
         GetComponent<Health>().HealFull();
         //Start death music etc.
     }

@@ -18,6 +18,7 @@ public class Chest : LootGenerator
         ItemScriptableObject i = GenerateItem(PotentialLoot);
         Item.Rarity r = GenerateRarity(PotentialLoot);
 
+
         if(i is WeaponSO)
         {
             item = new Weapon((WeaponSO)i, r);
