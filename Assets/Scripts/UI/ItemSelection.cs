@@ -68,12 +68,15 @@ public class ItemSelection : MonoBehaviour
             Weapon wep = (Weapon) Item;
             cItem = PSM.Equipment.currentWeapons[0]; //Will always have a starting weapon
             curItemIndex = 0;
+            bool showScreen = true;
             for(int i = 0 ; i < PSM.Equipment.currentWeapons.Count; i++)
             {
+                Debug.Log(Item.itemName + " = " + PSM.Equipment.currentWeapons[i]);
                 if(PSM.Equipment.currentWeapons[i] == null)
                 {
                     curItemIndex = i;
                     cItem = null;
+                    showScreen = false;
                     break;
                 }
                 else if(PSM.Equipment.currentWeapons[i].itemName.Equals(Item.itemName) || 
@@ -81,10 +84,11 @@ public class ItemSelection : MonoBehaviour
                 {
                     curItemIndex = i; //To replace current item
                     cItem = PSM.Equipment.currentWeapons[i];
+                    showScreen = false;
                     break;
                 }
             }
-            if(cItem != null && curItemIndex == 0) //We have all weapon slots filled and not a specific weapon to replace
+            if(showScreen) //We have all weapon slots filled and not a specific weapon to replace
             {
                 Buttons.SetActive(true);
             }
@@ -189,6 +193,7 @@ public class ItemSelection : MonoBehaviour
 
     public void DiscardItem()
     {
+        PSM.GetComponent<Health>().AddMaxHealth(5);
         OnClose();
     }
 

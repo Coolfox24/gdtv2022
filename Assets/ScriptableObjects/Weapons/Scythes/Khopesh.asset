@@ -15,10 +15,10 @@ MonoBehaviour:
   icon: {fileID: -1806634143, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Khopesh
   <WeaponType>k__BackingField: Scythe
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 25
+  <cooldown>k__BackingField: 4
+  speed: 0.6
+  hits: 2
   weaponProjectile: {fileID: 9024434700064609739, guid: 764b2d2ada8da014e857d0af86228261, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
   SwingRadius: 90

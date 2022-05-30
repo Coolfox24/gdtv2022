@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdaebec8dc1478349a7ec6592fcfa7d8, type: 3}
+  m_Name: Yeti
+  m_EditorClassIdentifier: 
+  ScalingFactor: 0.3
+  TimeToStartScaling: 15
+  MaxHealth: 150
+  moveSpeed: 6
+  Dmg: 16
+  ExpGiven: 10
+  AIMode: 0
+  LootTable: {fileID: 11400000, guid: 3401e2a5be66fcb4da2dbd173d1011e5, type: 2}
+  specialCooldown: 0
+  specialProjectile: {fileID: 0}

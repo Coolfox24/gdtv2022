@@ -11,7 +11,7 @@ public abstract class BaseStateMachine : MonoBehaviour
     {
         curState?.OnExit();
         curState = state;
-        state.OnEnter();
+        curState?.OnEnter();
     }
 
 }

@@ -15,10 +15,10 @@ MonoBehaviour:
   icon: {fileID: 289538208, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Iron Halberd
   <WeaponType>k__BackingField: Spear
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
+  baseDmg: 20
+  <cooldown>k__BackingField: 4
+  speed: 0.6
   hits: 1
   weaponProjectile: {fileID: 9024434700064609739, guid: cac1329d421c67e48844e0247dfff300, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
-  StabLength: 1
+  StabLength: 1.5

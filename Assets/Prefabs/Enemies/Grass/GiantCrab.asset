@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScalingFactor: 0
   TimeToStartScaling: 0
-  MaxHealth: 10
+  MaxHealth: 35
   moveSpeed: 3
   Dmg: 6
   ExpGiven: 10
+  AIMode: 0
   LootTable: {fileID: 0}
+  specialCooldown: 0
+  specialProjectile: {fileID: 0}

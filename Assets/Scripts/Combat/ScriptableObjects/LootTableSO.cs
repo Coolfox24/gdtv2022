@@ -59,7 +59,6 @@ public class LootTableSO : ScriptableObject
 
         foreach(ItemWeightings item in ListOfItems)
         {
-            Debug.Log(randomNum);
             if(randomNum <= (item.weighting + (item.weighting < 30 ? weightAdjust : -weightAdjust)))
             {
                 int randomWithin = Random.Range(0, item.items.Count);

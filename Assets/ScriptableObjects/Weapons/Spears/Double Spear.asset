@@ -15,10 +15,10 @@ MonoBehaviour:
   icon: {fileID: -416111539, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Double Spear
   <WeaponType>k__BackingField: Spear
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 20
+  <cooldown>k__BackingField: 4
+  speed: 0.6
+  hits: 2
   weaponProjectile: {fileID: 9024434700064609739, guid: 2478883da4380994db23b8938be9b632, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
   StabLength: 1

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135381932e0e5314f9741eee56d0138f, type: 3}
+  m_Name: DefaultLootChest
+  m_EditorClassIdentifier: 
+  SpecificRarity: 1
+  PossibleRarity: 05000000
+  SpecificDropChance: 1
+  LootDropChance: 1
+  SpecificList: 1
+  ListOfItems:
+  - items:
+    - {fileID: 11400000, guid: f87b2759f1bc80d47a7d1a24d91a7410, type: 2}
+    - {fileID: 11400000, guid: 796c5d1c8ff5d1045b1fe15deeeac60a, type: 2}
+    - {fileID: 11400000, guid: 3487d76b3e5c1e849bb8a34e6c3cc6c6, type: 2}
+    - {fileID: 11400000, guid: 4f02ff512c188e74cadb07653b779199, type: 2}
+    - {fileID: 11400000, guid: 37e062c241a474747b36addbe6cc5bb6, type: 2}
+    - {fileID: 11400000, guid: 95e1af53d6c7e2a499fbe9aa552877a7, type: 2}
+    - {fileID: 11400000, guid: dfd54e4ca680efe42a12e38b712e582e, type: 2}
+    - {fileID: 11400000, guid: fd77d2511cc8a5f48b9b06a7a86718dc, type: 2}
+    - {fileID: 11400000, guid: 0589ce90f680a274c9e7fab98bace8dd, type: 2}
+    - {fileID: 11400000, guid: 7da53a10b88845b4aa8f89c246230b6a, type: 2}
+    weighting: 9
+  - items:
+    - {fileID: 11400000, guid: 71b22e320016072449d46f49efcadc63, type: 2}
+    - {fileID: 11400000, guid: 4ec7a9d513630ba48b4d221bf659e55a, type: 2}
+    - {fileID: 11400000, guid: 1fcc921e2fb7c184ab7f27ed85c3bcb3, type: 2}
+    - {fileID: 11400000, guid: a161fe9554f9249428b559dab3fd6100, type: 2}
+    - {fileID: 11400000, guid: 3ad8452e852dddc4e8aebded9bfbf7bb, type: 2}
+    - {fileID: 11400000, guid: 8b8801d9fffd8544f9edfe8801161f41, type: 2}
+    - {fileID: 11400000, guid: 12f8f2fed0046054f868d6dfd6148977, type: 2}
+    - {fileID: 11400000, guid: 137e131e29702f840b7d3a7a858b210a, type: 2}
+    weighting: 18
+  - items:
+    - {fileID: 11400000, guid: 18043da43640d3e418fbbf7748de638c, type: 2}
+    - {fileID: 11400000, guid: 37e03575d89ec1340bb42b841ea76155, type: 2}
+    - {fileID: 11400000, guid: 74f20f5ebe1b4c44f974533bd0d5d268, type: 2}
+    - {fileID: 11400000, guid: f2a029118f664a44999220da62516829, type: 2}
+    - {fileID: 11400000, guid: a1b6fe67553041d4eaac8244d1dff786, type: 2}
+    weighting: 34
+  - items:
+    - {fileID: 11400000, guid: 9372c71e16fe0b044bcafa2d1a0eea56, type: 2}
+    - {fileID: 11400000, guid: fbcaca977a98cf947b84d3acda1e42df, type: 2}
+    - {fileID: 11400000, guid: a5411e6a905f8e6488ba1bbbc3f8a35f, type: 2}
+    weighting: 41

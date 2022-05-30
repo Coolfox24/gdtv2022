@@ -15,9 +15,9 @@ MonoBehaviour:
   icon: {fileID: 1514368552, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Wooden Wand
   <WeaponType>k__BackingField: Homing Wand
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 6
+  <cooldown>k__BackingField: 10
+  speed: 2
+  hits: 2
   weaponProjectile: {fileID: 6158760455325573977, guid: ee4dfacdffb0b724795b1c45fead49bb, type: 3}
-  <timeBetweenExtraShotsPercent>k__BackingField: 0.1
+  <timeBetweenExtraShotsPercent>k__BackingField: 0.05

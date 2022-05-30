@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135381932e0e5314f9741eee56d0138f, type: 3}
+  m_Name: SnowChestLoot
+  m_EditorClassIdentifier: 
+  SpecificRarity: 1
+  PossibleRarity: 0a000000
+  SpecificDropChance: 1
+  LootDropChance: 1
+  SpecificList: 1
+  ListOfItems:
+  - items:
+    - {fileID: 11400000, guid: 2fd6cf8515bf9c149816537551309e9f, type: 2}
+    weighting: 1
+  - items:
+    - {fileID: 11400000, guid: b8b3f5da458e05f4580ec3dac209f351, type: 2}
+    - {fileID: 11400000, guid: 42464d8f0d73ac54e9c62ecee5ee4ef0, type: 2}
+    - {fileID: 11400000, guid: 640b80cb96d19d14492ffb9bb7d0d995, type: 2}
+    - {fileID: 11400000, guid: ad95a11c3121dfd40b5c07fae4d8dfbe, type: 2}
+    - {fileID: 11400000, guid: 431ea62c85a6fc947ac2b5bc0939e429, type: 2}
+    - {fileID: 11400000, guid: 70ab0401955f08c41bd6fc5390ebf634, type: 2}
+    - {fileID: 11400000, guid: 3626983608c0a6c4c9d0930b3e36ee74, type: 2}
+    weighting: 14
+  - items:
+    - {fileID: 11400000, guid: a88fbf281632c9f428efed3cc5ab72f3, type: 2}
+    - {fileID: 11400000, guid: 74f20f5ebe1b4c44f974533bd0d5d268, type: 2}
+    - {fileID: 11400000, guid: 048a6adba7630a04785479bb082f32ea, type: 2}
+    - {fileID: 11400000, guid: a1b6fe67553041d4eaac8244d1dff786, type: 2}
+    weighting: 25

@@ -15,9 +15,9 @@ MonoBehaviour:
   icon: {fileID: -1760698874, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Blue Slammer
   <WeaponType>k__BackingField: Mace
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
+  baseDmg: 26
+  <cooldown>k__BackingField: 5
+  speed: 1.2
   hits: 1
   weaponProjectile: {fileID: 9024434700064609739, guid: 11d8680e3bfcb474998d7cb0656aa636, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0

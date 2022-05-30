@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossStateMachine : BaseStateMachine
-{
+{   
     [field: SerializeField] public Animator animator {get; private set;}
     public int BossMovingHash = Animator.StringToHash("IsMoving");
     public int BossAttack1Hash = Animator.StringToHash("Attack1");
     public int BossAttack2Hash = Animator.StringToHash("Attack2");
     public int BossDeathHash = Animator.StringToHash("Death");
+
+    public Slider healthSlider;
 
     public GameObject Attack1;
     float attack1Dmg = 25;
@@ -25,6 +28,9 @@ public class BossStateMachine : BaseStateMachine
         this.playerPos = psm.transform;       
         body = GetComponent<Rigidbody2D>();
         curState = new BossIdleState(this, 5f);
+
+        healthSlider.maxValue = GetComponent<Health>().maxHealth;
+        healthSlider.value = GetComponent<Health>().maxHealth;
     }
 
     public override void OnDie()
@@ -34,11 +40,12 @@ public class BossStateMachine : BaseStateMachine
 
     private void FixedUpdate()
     {
-        curState.OnTick(Time.deltaTime);
+        curState?.OnTick(Time.deltaTime);
         if(phase == 1)
         {
             //spawn enemies here on a timer
         }
+        healthSlider.value = GetComponent<Health>().curHealth;
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -63,5 +70,10 @@ public class BossStateMachine : BaseStateMachine
         EnemyHomingProjectile ehp = g.GetComponent<EnemyHomingProjectile>();
         ehp.Setup(attack1Dmg, 1);
         ehp.speed = 10;
+    }
+
+    public void EndGame()
+    {
+        FindObjectOfType<PlayerStateMachine>().EndGame(false);
     }
 }

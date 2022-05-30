@@ -28,7 +28,6 @@ public class GameMusic : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<MusicPlayer>();
-        Debug.Log(player);
     }
 
     void Update()

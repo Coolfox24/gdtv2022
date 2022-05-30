@@ -15,11 +15,11 @@ MonoBehaviour:
   icon: {fileID: 2127567077, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Emerald Bow
   <WeaponType>k__BackingField: Bow
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 20
+  <cooldown>k__BackingField: 14
+  speed: 7
+  hits: 5
   weaponProjectile: {fileID: 5043865050563303404, guid: a1feba50e7b3caa4fb0437e531fa35a1, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
-  FiringArc: 45
-  BaseProjectileAmount: 3
+  FiringArc: 60
+  BaseProjectileAmount: 5

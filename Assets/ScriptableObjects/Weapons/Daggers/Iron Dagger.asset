@@ -15,11 +15,11 @@ MonoBehaviour:
   icon: {fileID: 693448108, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Iron Dagger
   <WeaponType>k__BackingField: Dagger
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
+  baseDmg: 21
+  <cooldown>k__BackingField: 3
+  speed: 0.5
   hits: 1
   weaponProjectile: {fileID: 9024434700064609739, guid: f44f2f755ebbf614ea37a0de89c84afb, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
-  SwingRadius: 90
+  SwingRadius: 180
   SwingSameDirection: 0

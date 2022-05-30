@@ -15,9 +15,9 @@ MonoBehaviour:
   icon: {fileID: 1449919179, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: The Pulverizer
   <WeaponType>k__BackingField: Mace
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
+  baseDmg: 20
+  <cooldown>k__BackingField: 5
+  speed: 1.4
   hits: 1
   weaponProjectile: {fileID: 9024434700064609739, guid: 63cb718e69c092647bc2d2942d66859f, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0

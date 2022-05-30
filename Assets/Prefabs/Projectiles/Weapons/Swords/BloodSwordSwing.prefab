@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9024434699664285371}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9024434700064609749}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!212 &9024434699664285253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -158,13 +158,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.51127934, y: 1.5078707}
-      - {x: 0.1971085, y: 1.516763}
-      - {x: -0.10976249, y: 1.1650387}
-      - {x: -0.29494125, y: 1.2030253}
-      - {x: -0.42260033, y: 1.0682415}
+    - - {x: -0.0059037805, y: 1.702367}
+      - {x: -0.17862281, y: 1.4990814}
+      - {x: -0.26273996, y: 1.0397688}
+      - {x: -0.32588387, y: 0.9422236}
+      - {x: -0.3695559, y: 0.8162805}
       - {x: -0.29730564, y: 0.77491283}
-      - {x: 0.023679286, y: 0.5930664}
-      - {x: 0.21258464, y: 0.7168241}
-      - {x: 0.18854867, y: 0.8688417}
-      - {x: 0.51876473, y: 1.2180519}
+      - {x: -0.011369258, y: 0.5989078}
+      - {x: 0.34961608, y: 0.8096519}
+      - {x: 0.3373413, y: 0.931122}
+      - {x: 0.30995476, y: 1.0703646}
+      - {x: 0.22702041, y: 1.4965352}

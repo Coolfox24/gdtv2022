@@ -15,11 +15,11 @@ MonoBehaviour:
   icon: {fileID: -792379312, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Iron Shiv
   <WeaponType>k__BackingField: Dagger
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 34
+  <cooldown>k__BackingField: 3
+  speed: 0.45
+  hits: 2
   weaponProjectile: {fileID: 9024434700064609739, guid: 937e220d37f1ca4448251eff44f37de0, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
-  SwingRadius: 90
+  SwingRadius: 180
   SwingSameDirection: 0

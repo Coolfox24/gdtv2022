@@ -15,10 +15,10 @@ MonoBehaviour:
   icon: {fileID: 223755127, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Great Wand
   <WeaponType>k__BackingField: Multi Homing Wand
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 5
-  hits: 1
+  baseDmg: 14
+  <cooldown>k__BackingField: 8
+  speed: 2
+  hits: 3
   weaponProjectile: {fileID: 6158760455325573977, guid: ec3672bad8479b844a9fc244647f8081, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
   FiringArc: 318.88095

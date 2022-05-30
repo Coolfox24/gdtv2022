@@ -15,13 +15,24 @@ public class Health : MonoBehaviour
         curHealth = maxHealth;
     }
 
+    public void HealFull()
+    {
+        curHealth = maxHealth;
+    }
+
+    public void AddMaxHealth(float amt)
+    {
+        maxHealth += amt;
+        curHealth += amt;
+    }
+
     public void TakeDamage(float amount)
     {
         if(curHealth <= 0)
         {
             return;
         }
-        
+
         curHealth -= amount;
         AudioPlayer.PlayClipAtPoint(dmgSound, this.transform.position);
         if(curHealth <= 0)

@@ -71,7 +71,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0016872883, y: 0.044941783}
+  m_Offset: {x: -0.09730315, y: -0.059940696}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -82,7 +82,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5479522, y: 0.6285846}
+  m_Size: {x: 0.81192636, y: 0.7487867}
   m_EdgeRadius: 0
 --- !u!114 &9074287101401081363
 MonoBehaviour:
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxDistanceFromPlayer: 15
   <animator>k__BackingField: {fileID: 6296820104290632765}
-  Stats: {fileID: 0}
+  Stats: {fileID: 11400000, guid: daad0227efddd7449bb428e74f851b5c, type: 2}
   EnemyDirectionXHash: -1213057461
   EnemyDirectionYHash: -1061878051
 --- !u!114 &9074287101401081362
@@ -233,7 +233,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.004119396, y: -0.030896187}
+  m_Offset: {x: -0.084264755, y: -0.058000445}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -244,5 +244,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5138998, y: 0.45210648}
+  m_Size: {x: 0.6906681, y: 0.62887454}
   m_EdgeRadius: 0

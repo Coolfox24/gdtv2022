@@ -25,9 +25,9 @@ public class PlayerEquipment : MonoBehaviour
             currentWeapons.Add(null); //Initialize list at length
         }
         
-        ChangeWeapon(new Weapon(startingWeapon, Item.Rarity.common), 0);
+        //ChangeWeapon(new Weapon(startingWeapon, Item.Rarity.common), 0);
 
-         //Change this to be random at later point
+        //Change this to be random at later point
     }
 
     public void ChangeItem(Armor item, ArmorItemSO.ARMOR_SLOTS slot, int accessSlot)

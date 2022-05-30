@@ -15,11 +15,11 @@ MonoBehaviour:
   icon: {fileID: -1982148366, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Wooden Bow
   <WeaponType>k__BackingField: Bow
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 2
-  hits: 1
+  baseDmg: 8
+  <cooldown>k__BackingField: 4
+  speed: 7
+  hits: 2
   weaponProjectile: {fileID: 5043865050563303404, guid: a1feba50e7b3caa4fb0437e531fa35a1, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
-  FiringArc: 45
-  BaseProjectileAmount: 3
+  FiringArc: 60
+  BaseProjectileAmount: 2

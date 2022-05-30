@@ -11,7 +11,6 @@ public class Armor : Item
     public Armor(ArmorItemSO armor, Item.Rarity rarity) : base(rarity, armor.icon)
     {
         this.itemName = armor.itemName;
-        Debug.Log(this.itemName);
         this.armorSO = armor;
         
         this.stats = new List<Item.ItemStats>(armor.baseStats);

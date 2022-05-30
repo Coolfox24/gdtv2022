@@ -15,10 +15,10 @@ MonoBehaviour:
   icon: {fileID: -1024090119, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Scythe
   <WeaponType>k__BackingField: Scythe
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
+  baseDmg: 20
+  <cooldown>k__BackingField: 4
+  speed: 0.6
   hits: 1
   weaponProjectile: {fileID: 9024434700064609739, guid: 459837a7e6793f94ca62e3df4689f5c0, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
-  SwingRadius: 0
+  SwingRadius: 90

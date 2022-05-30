@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScalingFactor: 0.2
   TimeToStartScaling: 10
-  MaxHealth: 10
+  MaxHealth: 60
   moveSpeed: 3
-  Dmg: 5
+  Dmg: 12
   ExpGiven: 10
-  LootTable: {fileID: 11400000, guid: fd88715b77799bd4194376b7f1f6fd8b, type: 2}
+  AIMode: 3
+  LootTable: {fileID: 11400000, guid: 0f9e436fd4b23e8459054b8bbb127446, type: 2}
+  specialCooldown: 2.5
+  specialProjectile: {fileID: 5043865050563303404, guid: 4c2da2d73a537a1499aba837d2dae1f3, type: 3}

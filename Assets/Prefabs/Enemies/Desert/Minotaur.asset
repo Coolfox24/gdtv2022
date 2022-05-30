@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdaebec8dc1478349a7ec6592fcfa7d8, type: 3}
   m_Name: Minotaur
   m_EditorClassIdentifier: 
-  ScalingFactor: 0
-  TimeToStartScaling: 0
-  MaxHealth: 10
-  moveSpeed: 12
-  Dmg: 10
+  ScalingFactor: 0.2
+  TimeToStartScaling: 15
+  MaxHealth: 250
+  moveSpeed: 13
+  Dmg: 30
   ExpGiven: 0
   AIMode: 2
-  LootTable: {fileID: 0}
+  LootTable: {fileID: 11400000, guid: 31e0b876008cdbc4ebf64ef8e89d3469, type: 2}
   specialCooldown: 5
   specialProjectile: {fileID: 0}

@@ -21,6 +21,6 @@ public class AxeProjectiles : Projectile
         }
 
 
-        body.velocity -= new Vector2(0, .05f);
+        body.velocity -= new Vector2(0, .15f);
     }
 }

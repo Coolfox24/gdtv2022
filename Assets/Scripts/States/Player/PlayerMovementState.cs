@@ -21,16 +21,9 @@ public class PlayerMovementState : PlayerBaseState
         timeSinceLastFootprint = footprintTime;
 
         stateMachine.Input.Menu += ShowCharacterScreen;
-        stateMachine.Input.KillSelf += KillSelf;
+
     }
     
-    public void KillSelf()
-    {
-        stateMachine.OnDie();
-        stateMachine.Input.KillSelf -= KillSelf;
-    }
-
-
     public override void OnTick(float deltaTime)
     {
         Move(deltaTime);

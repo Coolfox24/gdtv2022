@@ -46,8 +46,16 @@ public class HomingProjectile : Projectile
     {   
         if(spawner.curEnemies.Count == 0)
         {
-            target = null;
-            Destroy(this.gameObject);
+            if(spawner.GetComponent<PlayerStateMachine>().death.gameObject.activeInHierarchy)
+            {
+                target = spawner.GetComponent<PlayerStateMachine>().death.gameObject;
+            }   
+            else
+            {
+                target = null;
+                Destroy(this.gameObject);
+                
+            }
             return;
         }
 

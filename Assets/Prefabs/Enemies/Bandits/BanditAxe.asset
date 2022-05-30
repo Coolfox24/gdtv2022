@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdaebec8dc1478349a7ec6592fcfa7d8, type: 3}
+  m_Name: BanditAxe
+  m_EditorClassIdentifier: 
+  ScalingFactor: 0.1
+  TimeToStartScaling: 5
+  MaxHealth: 60
+  moveSpeed: 7
+  Dmg: 12
+  ExpGiven: 10
+  AIMode: 0
+  LootTable: {fileID: 11400000, guid: 94eee584669b3c34d8025f5a0babea3f, type: 2}
+  specialCooldown: 0
+  specialProjectile: {fileID: 0}

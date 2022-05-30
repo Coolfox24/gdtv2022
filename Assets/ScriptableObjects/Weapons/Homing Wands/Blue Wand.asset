@@ -15,9 +15,9 @@ MonoBehaviour:
   icon: {fileID: -725519426, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Blue Wand
   <WeaponType>k__BackingField: Homing Wand
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 20
+  <cooldown>k__BackingField: 10
+  speed: 2
+  hits: 3
   weaponProjectile: {fileID: 6158760455325573977, guid: bfd6f56a8d65d15468b4898efe0c0fac, type: 3}
-  <timeBetweenExtraShotsPercent>k__BackingField: 0.1
+  <timeBetweenExtraShotsPercent>k__BackingField: 0.05

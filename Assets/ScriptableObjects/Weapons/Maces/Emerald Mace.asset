@@ -15,10 +15,10 @@ MonoBehaviour:
   icon: {fileID: 1454384137, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Emerald Mace
   <WeaponType>k__BackingField: Mace
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 30
+  <cooldown>k__BackingField: 4
+  speed: 0.8
+  hits: 2
   weaponProjectile: {fileID: 9024434700064609739, guid: 6cd57bd76e6064c4cb81cdbb2964a450, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
   SwingRadius: 360

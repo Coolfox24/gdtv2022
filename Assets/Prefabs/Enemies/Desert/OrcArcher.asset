@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdaebec8dc1478349a7ec6592fcfa7d8, type: 3}
   m_Name: OrcArcher
   m_EditorClassIdentifier: 
-  ScalingFactor: 0
-  TimeToStartScaling: 0
-  MaxHealth: 2
-  moveSpeed: 2
-  Dmg: 2
+  ScalingFactor: 0.2
+  TimeToStartScaling: 15
+  MaxHealth: 60
+  moveSpeed: 3
+  Dmg: 12
   ExpGiven: 2
   AIMode: 3
-  LootTable: {fileID: 0}
-  specialCooldown: 1
+  LootTable: {fileID: 11400000, guid: 31e0b876008cdbc4ebf64ef8e89d3469, type: 2}
+  specialCooldown: 2.5
   specialProjectile: {fileID: 5043865050563303404, guid: 81b0ce4fdf134eb408278aaf56107f87, type: 3}

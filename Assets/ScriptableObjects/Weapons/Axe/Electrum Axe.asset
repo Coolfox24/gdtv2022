@@ -15,11 +15,11 @@ MonoBehaviour:
   icon: {fileID: 651084189, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Electrum Axe
   <WeaponType>k__BackingField: Axe
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 20
+  <cooldown>k__BackingField: 5
+  speed: 4
+  hits: 10
   weaponProjectile: {fileID: 6158760455325573977, guid: 87c60b6f6ae31744ab5ba87ed8cb0962, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
-  BaseProjectileAmount: 1
-  SpreadRange: 0.2
+  BaseProjectileAmount: 3
+  SpreadRange: 2.5

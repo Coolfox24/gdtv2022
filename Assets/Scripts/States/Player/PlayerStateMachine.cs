@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStateMachine : BaseStateMachine
 {
@@ -13,11 +14,15 @@ public class PlayerStateMachine : BaseStateMachine
     [field: SerializeField] public ItemSelection ItemSelection {get; private set;}
     [field: SerializeField] public HUDController HUD {get; private set;}
     [field: SerializeField] public LootTableSO StartingWeapon {get; private set;}
+    [field: SerializeField] public Image BlackScreen {get; private set;}
     public Vector2 Facing = new Vector2(0, 1);
-    BossStateMachine death;
+    public BossStateMachine death;
+    public GameObject LoseScreen;
+    public GameObject WinScreen;
+    public GameObject deathUI;
 
     float maxTime = 60 * 20;
-    float timeRemaining = 60 * 20;
+    public float timeRemaining = 60 * 20;
 
     public int PlayerMovingHash = Animator.StringToHash("IsMoving");
     public int PlayerDirectionXHash = Animator.StringToHash("X");
@@ -34,6 +39,8 @@ public class PlayerStateMachine : BaseStateMachine
         PlayerStats = new PlayerStats(); //Can use this to generate random starting stats for player
         //Randomize Weapon
         Equipment.ChangeWeapon(new Weapon((WeaponSO)StartingWeapon.GetDroppedItem(), Item.Rarity.common), 0);
+
+        Input.KillSelf += OnDie;
     }
 
     private void FixedUpdate()
@@ -44,12 +51,13 @@ public class PlayerStateMachine : BaseStateMachine
         }
         curState?.OnTick(Time.deltaTime);
 
-        timeRemaining -= Time.deltaTime;
         HUD.UpdateTime((int)Mathf.Ceil(20f * (timeRemaining / maxTime)));
         if(timeRemaining < 0 && !alreadyDied)
         {
             OnDie(); //Start end fight when time runs out
+            return;    
         }
+        timeRemaining -= Time.deltaTime;
     } 
     bool alreadyDied = false;
     public override void OnDie()
@@ -57,25 +65,30 @@ public class PlayerStateMachine : BaseStateMachine
         //Change state here to death state
 
         //Will have to call some function on the spawner to progress to death mode
-        Debug.Log("Dead");
-
         if(alreadyDied)
         {
             //Gameover -- Show gameover screen
             //Death animation
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            EndGame(true);
         }
         else
         {
+            SwitchState(new PlayerFirstDeathState(this));
             alreadyDied = true;
+            Input.KillSelf -= OnDie;
             //Fade to black
-            transform.position = new Vector3(-375, 222, 0);
-            timeRemaining = 0;
-            death.gameObject.SetActive(true);
-            //Start death music etc.
         }
-        
-        //Spawn Death
+    }
+
+    public void SetupDeath()
+    {
+        deathUI.SetActive(true);
+        transform.position = new Vector3(-375, 222, 0);
+        timeRemaining = 0;
+        death.gameObject.SetActive(true);
+
+        GetComponent<Health>().HealFull();
+        //Start death music etc.
     }
 
     //Own Take Dmg function to allow iframes
@@ -99,4 +112,28 @@ public class PlayerStateMachine : BaseStateMachine
         HUD.UpdateHealth( (int)Mathf.Ceil((hp.curHealth / hp.maxHealth) * 20));
     }
 
+
+    public void EndGame(bool lose)
+    {
+        deathUI.SetActive(false);
+        CharScreen.OnShow();
+        HUD.gameObject.SetActive(false);
+        curState = null; //Change to a none moving state
+        death.SwitchState(null);
+        if(lose)
+        {
+            //Show Lose Scene
+            LoseScreen.SetActive(true);
+        }
+        else
+        {
+            //show win screen
+            WinScreen.SetActive(true);
+        }
+    }
+
+    public void MainMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
 }

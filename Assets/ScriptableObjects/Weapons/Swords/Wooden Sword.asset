@@ -15,9 +15,9 @@ MonoBehaviour:
   icon: {fileID: 872270895, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Wooden Sword
   <WeaponType>k__BackingField: Sword
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
+  baseDmg: 12
+  <cooldown>k__BackingField: 4
+  speed: 0.85
   hits: 1
   weaponProjectile: {fileID: 9024434700064609739, guid: 5c2b3c8f8a7bad543a375f130ddad107, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0

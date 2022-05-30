@@ -15,9 +15,9 @@ MonoBehaviour:
   icon: {fileID: 263957905, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Copper Kukri
   <WeaponType>k__BackingField: Throwing Weapon
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
-  hits: 1
+  baseDmg: 8
+  <cooldown>k__BackingField: 4
+  speed: 8
+  hits: 2
   weaponProjectile: {fileID: 5043865050563303404, guid: abd448e52232ef24594c8e8fc45e8c6a, type: 3}
-  <timeBetweenExtraShotsPercent>k__BackingField: 0.2
+  <timeBetweenExtraShotsPercent>k__BackingField: 0.05

@@ -15,9 +15,9 @@ MonoBehaviour:
   icon: {fileID: 466620333, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Iron Sword
   <WeaponType>k__BackingField: Sword
-  baseDmg: 1
-  <cooldown>k__BackingField: 1
-  speed: 1
+  baseDmg: 21
+  <cooldown>k__BackingField: 4
+  speed: 0.85
   hits: 1
   weaponProjectile: {fileID: 9024434700064609739, guid: b21e3cbb96b6f7f4c8f67fd69ae499c1, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 1

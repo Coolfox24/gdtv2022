@@ -38,7 +38,6 @@ public class BossIdleState : BossBaseState
         {
             //enter into a different state here
             float rng = Random.Range(0f, 1f);
-            Debug.Log(rng);
             if(rng < 0.5f)
             {
                 //move

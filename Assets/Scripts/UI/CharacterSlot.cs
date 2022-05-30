@@ -13,6 +13,14 @@ public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public int WeaponIndex;
 
     public Image icon;
+    
+    void Start()
+    {
+        if(equipment is null)
+        {
+            equipment = FindObjectOfType<PlayerEquipment>();
+        }
+    }
 
     public void OnShow()
     {

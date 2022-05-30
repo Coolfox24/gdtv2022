@@ -15,11 +15,11 @@ MonoBehaviour:
   icon: {fileID: -746603102, guid: dbf3b447a0aceba4a9eba2be02964472, type: 3}
   itemName: Iron Axe
   <WeaponType>k__BackingField: Axe
-  baseDmg: 1
-  <cooldown>k__BackingField: 3
-  speed: 1
-  hits: 1
+  baseDmg: 16
+  <cooldown>k__BackingField: 5
+  speed: 4
+  hits: 8
   weaponProjectile: {fileID: 6158760455325573977, guid: 16987b4c7ddbc1947bbaf0689a3a6b67, type: 3}
   <timeBetweenExtraShotsPercent>k__BackingField: 0
   BaseProjectileAmount: 3
-  SpreadRange: 1.99
+  SpreadRange: 2.5

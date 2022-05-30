@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135381932e0e5314f9741eee56d0138f, type: 3}
+  m_Name: DesertLoot
+  m_EditorClassIdentifier: 
+  SpecificRarity: 1
+  PossibleRarity: 070000000a000000
+  SpecificDropChance: 1
+  LootDropChance: 0.1
+  SpecificList: 1
+  ListOfItems:
+  - items:
+    - {fileID: 11400000, guid: 27afdf66bc503bd4cb5fbe1696cc49cf, type: 2}
+    - {fileID: 11400000, guid: c5ddbe9c4510e9f40b31db62a4671c33, type: 2}
+    - {fileID: 11400000, guid: a2d0797442957d442b46d7693258bd37, type: 2}
+    - {fileID: 11400000, guid: a2c31dda54e2a7e42894154998acb999, type: 2}
+    - {fileID: 11400000, guid: 68157c0e4c0e2d046b7367033cb39722, type: 2}
+    - {fileID: 11400000, guid: c075a5f438706334faf80aaf83a70f1f, type: 2}
+    - {fileID: 11400000, guid: 6445a51fd0180f942991f1b1011c615b, type: 2}
+    - {fileID: 11400000, guid: 38e4864f1ae16c34e89fc703f2c6723f, type: 2}
+    - {fileID: 11400000, guid: 8d6e09843eff5a7419323c0e67ebb22e, type: 2}
+    - {fileID: 11400000, guid: 05faa5bb08b979a439bd0f36c729ab5c, type: 2}
+    - {fileID: 11400000, guid: f611485805150c144a6c42b8c03a4a82, type: 2}
+    weighting: 2
+  - items:
+    - {fileID: 11400000, guid: 9634dfb3da0c95140b25f9639565b460, type: 2}
+    - {fileID: 11400000, guid: 247d2774708906e4d8b28dc06ba04aa9, type: 2}
+    - {fileID: 11400000, guid: bb5f2e5778569f84b9b121a5b91afd2d, type: 2}
+    - {fileID: 11400000, guid: bbc46dd5fdb0f80418a8b89a43d26ae9, type: 2}
+    - {fileID: 11400000, guid: cadc5e4791e5c4146a6facc843360a77, type: 2}
+    - {fileID: 11400000, guid: 858b3e9d455c87848a06d6e23b67b887, type: 2}
+    - {fileID: 11400000, guid: 95e1af53d6c7e2a499fbe9aa552877a7, type: 2}
+    - {fileID: 11400000, guid: f514beac6a4a38844a47c496eeffae60, type: 2}
+    - {fileID: 11400000, guid: d49e74b20a4600c4bb49cbb4abb39044, type: 2}
+    - {fileID: 11400000, guid: 8579965b38baeea4e8d8b2b7ffc8af24, type: 2}
+    - {fileID: 11400000, guid: 95987bbe9f5c6f145ac95ab4cbe74416, type: 2}
+    weighting: 6
