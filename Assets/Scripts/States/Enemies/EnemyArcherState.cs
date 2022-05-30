@@ -19,7 +19,6 @@ public class EnemyArcherState : EnemyBaseState
     {
         base.OnTick(deltaTime);
 
-        Debug.Log(cooldownRemaining);
         //Archery Code here
         if((cooldownRemaining -= deltaTime) < 0)
         {

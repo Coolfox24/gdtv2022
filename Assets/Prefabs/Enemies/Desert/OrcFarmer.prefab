@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxDistanceFromPlayer: 15
   <animator>k__BackingField: {fileID: 6296820104290632765}
-  Stats: {fileID: 0}
+  Stats: {fileID: 11400000, guid: d50e4d49b54b2b345b6d3a18d93575ce, type: 2}
   EnemyDirectionXHash: -1213057461
   EnemyDirectionYHash: -1061878051
 --- !u!114 &9074287101401081362

@@ -20,6 +20,7 @@ public class GravityWeapon : WeaponSO
             p?.Setup(baseDmg + stats.Damage + armorStats.Damage,
                  hits + (int)stats.Proj_passthrough + (int)armorStats.Proj_passthrough
                 );
+            w.transform.localScale *= 1 + ((stats.Area + armorStats.Area) * .2f);
         }
     }
 }

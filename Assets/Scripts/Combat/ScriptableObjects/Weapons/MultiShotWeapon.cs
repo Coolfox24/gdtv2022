@@ -21,6 +21,7 @@ public class MultiShotWeapon : WeaponSO
         for(int i = 0; i < totalProj; i++)
         {
             GameObject proj = Instantiate(this.weaponProjectile, playerPos.position, Quaternion.Lerp(left, right, i/(totalProj-1)));
+            proj.transform.localScale *= 1 + ((stats.Area + armorStats.Area) * .2f);
             Rigidbody2D rb = proj.GetComponent<Rigidbody2D>();
             rb.velocity =  proj.transform.up * (speed + stats.Speed + armorStats.Speed); 
             Projectile p = proj.GetComponent<Projectile>();

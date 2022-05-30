@@ -39,7 +39,7 @@ public class PlayerStateMachine : BaseStateMachine
         PlayerStats = new PlayerStats(); //Can use this to generate random starting stats for player
         //Randomize Weapon
         Equipment.ChangeWeapon(new Weapon((WeaponSO)StartingWeapon.GetDroppedItem(), Item.Rarity.common), 0);
-
+        Debug.Log(Equipment.currentWeapons[0]);
         Input.KillSelf += OnDie;
     }
 
@@ -87,7 +87,9 @@ public class PlayerStateMachine : BaseStateMachine
         timeRemaining = 0;
         death.gameObject.SetActive(true);
         FindObjectOfType<GameMusic>().InDeathFight = true;
-        GetComponent<Health>().HealFull();
+        Health hp = GetComponent<Health>();
+        hp.HealFull();
+        HUD.UpdateHealth( (int)Mathf.Ceil((hp.curHealth / hp.maxHealth) * 20));
         //Start death music etc.
     }
 

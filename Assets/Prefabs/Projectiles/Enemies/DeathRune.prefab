@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2696286648464837506}
   - component: {fileID: 2696286648464837508}
   - component: {fileID: 5089833082272596946}
+  - component: {fileID: 7823899650646610447}
   - component: {fileID: 6671609347461219547}
   m_Layer: 0
   m_Name: DeathRune
@@ -107,6 +108,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7823899650646610447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2696286648464837509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eac716decc43a942b3393e68803a336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 30
 --- !u!58 &6671609347461219547
 CircleCollider2D:
   m_ObjectHideFlags: 0

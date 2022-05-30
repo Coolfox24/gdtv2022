@@ -15,7 +15,7 @@ public class PlayerEquipment : MonoBehaviour
     public Armor access1  {get; private set;}
     public Armor  access2 {get; private set;}
 
-    void Start()
+    void Awake()
     {
         UpdatePlayerStats();
         currentWeapons = new List<Weapon>();

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpecificRarity: 0
   PossibleRarity: 07000000
-  SpecificDropChance: 0
+  SpecificDropChance: 1
   LootDropChance: 1
-  SpecificList: 0
+  SpecificList: 1
   ListOfItems:
   - items:
     - {fileID: 11400000, guid: f87b2759f1bc80d47a7d1a24d91a7410, type: 2}

@@ -66,6 +66,8 @@ public class SideStabbingWeapon : WeaponSO
                     wep,
                     StabLength
                 );
+        rightProj.transform.localScale *= 1 + ((stats.Area + armorStats.Area) * .2f);
+        leftProj.transform.localScale *= 1 + ((stats.Area + armorStats.Area) * .2f);
     }
 
 }

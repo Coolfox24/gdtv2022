@@ -52,7 +52,7 @@ public class PlayerMovementState : PlayerBaseState
     private void Move(float deltaTime)
     {
         Vector2 currentPos = body.position;
-        Vector2 adjustedMovement = stateMachine.Input.Movement * (3 + ((stateMachine.PlayerStats.Speed + stateMachine.Equipment.armorStats.Speed)/5));
+        Vector2 adjustedMovement = stateMachine.Input.Movement * (3 + ((stateMachine.PlayerStats.Speed + stateMachine.Equipment.armorStats.Speed)/2.5f));
         Vector2 newPos = currentPos + adjustedMovement * deltaTime;
         SpawnFootprint(deltaTime, newPos);
         body.MovePosition(newPos);

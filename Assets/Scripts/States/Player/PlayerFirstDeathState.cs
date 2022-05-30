@@ -13,11 +13,16 @@ public class PlayerFirstDeathState : PlayerBaseState
     public PlayerFirstDeathState(PlayerStateMachine stateMachine) : base(stateMachine)
     {
     }
-
+    Rigidbody2D rb;
     public override void OnEnter()
     {
         curColor = stateMachine.BlackScreen.color;
         stateMachine.BlackScreen.gameObject.SetActive(true);
+        rb = stateMachine.GetComponent<Rigidbody2D>();
+        rb.velocity = Vector2.zero;
+        
+        stateMachine.Animator.SetFloat(stateMachine.PlayerDirectionXHash, 0);
+        stateMachine.Animator.SetFloat(stateMachine.PlayerDirectionYHash, 0);
     }
 
     public override void OnExit()
@@ -28,7 +33,7 @@ public class PlayerFirstDeathState : PlayerBaseState
     public override void OnTick(float deltaTime)
     {
         curTime += deltaTime;
-
+        rb.velocity = Vector2.zero;
         if(!fadeIn)
         {
             //increase alpha of black screen
