@@ -5,6 +5,7 @@ My entry into the GDTV2022 Gamejam
 Some additional Assets are needed from itch.io to run the game  
 https://ivess.itch.io/ivess-fantasy-rpg-icon-pack  
 https://lionheart963.itch.io/wizard  
+https://itch.io/profile/xyezawr
 
 These need to be put in the Don't Upload folde in the root of the sprites folder.
 
