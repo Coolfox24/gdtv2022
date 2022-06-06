@@ -1,4 +1,6 @@
-# gdtv2022
+# gdtv2022  
+  
+  Check it out at https://coolfox24.itch.io/dv
  
 My entry into the GDTV2022 Gamejam  
   
